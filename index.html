@@ -17,16 +17,16 @@ html, body {
 
 video {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+
   width: 100vw;
   height: 100vh;
 
-  /* ▼ 今より大きくする */
-  transform: translate(-50%, -50%) scale(1.05);
-
-  object-fit: cover;
+  object-fit: cover;      /* 画面を完全に埋める */
   object-position: center;
+
+  background: black;
 }
 </style>
 </head>
