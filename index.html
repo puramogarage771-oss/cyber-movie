@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Test</title>
-
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    video {
-      width: 100%;
-      max-width: 480px;
-      height: auto;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>SYSTEM BOOT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,body{
+  margin:0;
+  background:black;
+}
+video{
+  width:100%;
+  height:auto;
+  display:block;
+}
+</style>
 </head>
-
 <body>
 
-  <video controls muted loop playsinline preload="auto">
-    <source src="https://raw.githubusercontent.com/puramogarage771-oss/cyber-movie/main/abc.mp4" type="video/mp4">
-    お使いのブラウザは video タグに対応していません。
-  </video>
+<video autoplay muted loop playsinline>
+  <source src="matrix.mp4" type="video/mp4">
+</video>
 
 </body>
 </html>
