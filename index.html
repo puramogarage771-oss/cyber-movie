@@ -15,31 +15,26 @@ html, body {
   overflow: hidden;
 }
 
-/* ラッパーで固定 */
-.video-wrap {
+video {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-}
 
-/* 動画本体 */
-.video-wrap video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  object-fit: cover;      /* 画面を完全に埋める */
+  object-position: center;
+
+  background: black;
 }
 </style>
 </head>
 
 <body>
-  <div class="video-wrap">
-    <video autoplay muted loop playsinline>
-      <source src="matrix.mp4" type="video/mp4">
-    </video>
-  </div>
+  <video autoplay muted loop playsinline>
+    <source src="matrix.mp4" type="video/mp4">
+  </video>
 </body>
 </html>
+
