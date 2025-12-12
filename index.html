@@ -16,21 +16,20 @@
     }
 
     video {
-      width: 100%;
+      width: 100vw;
       height: 100vh;
+      object-fit: contain; /* ★はみ出し防止 */
       display: block;
-      object-fit: cover;
-      object-position: center center;
+      background: black;
     }
   </style>
 </head>
 
 <body>
-
   <video autoplay muted loop playsinline>
     <source src="matrix.mp4" type="video/mp4">
   </video>
-
 </body>
 </html>
+
 
