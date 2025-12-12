@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>SYSTEM BOOT</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-html,body{
-  margin:0;
-  background:black;
-}
-video{
-  width:100%;
-  height:auto;
-  display:block;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>SYSTEM BOOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      object-fit: cover;
+      object-position: center center;
+    }
+  </style>
 </head>
+
 <body>
 
-<video autoplay muted loop playsinline controls>
-  <source src="matrix.mp4" type="video/mp4">
-</video>
+  <video autoplay muted loop playsinline>
+    <source src="matrix.mp4" type="video/mp4">
+  </video>
 
 </body>
 </html>
+
