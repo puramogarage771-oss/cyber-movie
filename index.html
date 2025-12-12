@@ -14,40 +14,32 @@ html, body {
   background: black;
   overflow: hidden;
 }
-　video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
 
-  object-fit: cover;
-  object-position: center;
-
-  /* ★ ここだけ追加・変更 */
-  transform: translate(-50%, -50%) scale(0.95);
-}
-
+/* ラッパーで固定 */
+.video-wrap {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+}
 
-  object-fit: cover;      /* 画面を完全に埋める */
-  object-position: center;
-
-  background: black;
+/* 動画本体 */
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 </style>
 </head>
 
 <body>
-  <video autoplay muted loop playsinline>
-    <source src="matrix.mp4" type="video/mp4">
-  </video>
+  <div class="video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="matrix.mp4" type="video/mp4">
+    </video>
+  </div>
 </body>
 </html>
-
-
