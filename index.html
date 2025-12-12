@@ -15,7 +15,21 @@ html, body {
   overflow: hidden;
 }
 
-video {
+
+　video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+  object-position: center;
+
+  /* ★ ここだけ追加・変更 */
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
   position: fixed;
   top: 0;
   left: 0;
@@ -37,3 +51,4 @@ video {
   </video>
 </body>
 </html>
+
