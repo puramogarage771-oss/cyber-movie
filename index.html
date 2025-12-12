@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>SYSTEM BOOT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>SYSTEM BOOT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      overflow: hidden;
-    }
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
 
-    video {
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain; /* ★はみ出し防止 */
-      display: block;
-      background: black;
-    }
-  </style>
+/* 表示枠 */
+.video-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+/* 動画本体 */
+video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* ★はみ出し防止の核心 */
+}
+</style>
 </head>
 
 <body>
-  <video autoplay muted loop playsinline>
-    <source src="matrix.mp4" type="video/mp4">
-  </video>
+  <div class="video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="matrix.mp4" type="video/mp4">
+    </video>
+  </div>
 </body>
 </html>
 
